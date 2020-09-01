@@ -1,5 +1,5 @@
 ---
-name: Requisição de funcionaliade nova
+name: Requisição de funcionalidade nova
 about: Peça uma nova funcionalidade para o projeto
 title: ""
 labels: ""
