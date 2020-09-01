@@ -1,34 +1,19 @@
-# oss-template
+# Hacktoberfest 2020
 
-> Pequena descrição do que seu projeto faz.
+Este repositório contém o código fonte do site do evento do Hacktoberfest 2020 organizado pela OpendevUFCG que acontecerá durante todo o mês de Outubro. Inspirados pelo hacktoberfest organizado todos os anos pela [Digital Ocean](https://hacktoberfest.digitalocean.com/), nosso objetivo é oferecer palestras, cursos e workshops relacionados a vários campos da ciência da computação de forma gratuita e visando a disseminação da cultura open source.
 
-<!-- Descreva aqui no início os objetivos do seu projeto. -->
+## Sobre o site
 
-Um template para seu projeto Open Source contendo os arquivos essenciais. Mude os tópicos desse `README.md` para conter as informações necessárias do seu projeto. Nesse template irá conter:
+O desenvolvimento do site será feito durante todo o mês de setembro visando alguns objetivos:
 
-- `README.md`: Uma estrutura básica para descrever o que é seu projeto e como utilizá-lo.
-- `LICENSE`: A licença está como **MIT**, edite para outra caso necessário. Use o [choosealicense](https://choosealicense.com/) para ajudar.
-- `CONTRIBUTING.md`: Arquivo opcional onde pode conter mais detalhes de como contribuir para seu projeto.
-- `CODE_OF_CONDUCT.md`: Código de conduta baseado no [Contributor Covenant](https://www.contributor-covenant.org). Adapte se necessário.
-- `github/ISSUE_TEMPLATE`: Template para issues.
-- `github/PULL_REQUEST_TEMPLATE`: Template para pull requests.
-
-## Como Usar
-
-<!-- Descreva como um usuário pode utilizar seu projeto. -->
+- Utilizar de tecnologias básicas da Web (Javascript, HTML e CSS)
+- Ser desenvolvido por voluntários que serão orientados e receberão suporte de membros do Core do Opendev que ficarão responsáveis por organizar e supervisionar o desenvolvimento
+- Ser uma ferramenta de aprendizado e compartilhamento de conhecimento entre os participantes no desenvolvimento
 
 ## Desenvolvimento
 
-Descreva quais tecnologias necessárias para sua aplicação funcionar e adicione referências.
+O desenvolvimento será dividido em duas etapas. A primeira etapa será voltada para o desenvolvimento da preview do site, será somente uma tela com o nome do hacktoberfest, seguindo um design específico, ela será usada inicialmente para a divulgação do site e deve ser desenvolvida o mais rápido possível. A segunda etapa focará o desenvolvimento do site em si e deve ser finalizada antes do evento começar (até o final de setembro).
 
-```
-caso sua aplicação exija um comando para rodar, coloque aqui.
-```
+## Fluxo de desenvolvimento
 
-## Como Contribuir
-
-<!-- Descreva informações necessárias para contribuir. Se necessário referencie o CONTRIBUTING.md -->
-
-## Licença
-
-MIT © [SeuProjeto]()
+Na maioria dos casos o fluxo será o seguinte: o supervisor criará issues para orientar as necessidades do desenvolvimento em relação a componentes que deverão ser criados, o voluntário que estiver disposto a desenvolver a issue deve comentar na descrição da mesma pedindo o assign para começar a desenvolver. Com o assign em mãos, o voluntário deve criar uma nova branch no formato 'feature/issue#NUMERO_DA_ISSUE'.
