@@ -14,6 +14,6 @@ O desenvolvimento do site será feito durante todo o mês de setembro visando al
 
 O desenvolvimento será dividido em duas etapas. A primeira etapa será voltada para o desenvolvimento da preview do site, será somente uma tela com o nome do hacktoberfest, seguindo um design específico, ela será usada inicialmente para a divulgação do site e deve ser desenvolvida o mais rápido possível. A segunda etapa focará o desenvolvimento do site em si e deve ser finalizada antes do evento começar (até o final de setembro).
 
-## Fluxo de desenvolvimento
+## Fluxo de contribuição
 
 Na maioria dos casos o fluxo será o seguinte: o supervisor criará issues para orientar as necessidades do desenvolvimento em relação a componentes que deverão ser criados, o voluntário que estiver disposto a desenvolver a issue deve comentar na descrição da mesma pedindo o assign para começar a desenvolver. Com o assign em mãos, o voluntário deve criar uma nova branch no formato 'feature/issue#NUMERO_DA_ISSUE'.
