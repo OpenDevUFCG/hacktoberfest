@@ -10,10 +10,19 @@ O desenvolvimento do site será feito durante todo o mês de setembro visando al
 - Ser desenvolvido por voluntários que serão orientados e receberão suporte de membros do Core do Opendev que ficarão responsáveis por organizar e supervisionar o desenvolvimento
 - Ser uma ferramenta de aprendizado e compartilhamento de conhecimento entre os participantes no desenvolvimento
 
-## Desenvolvimento
+## Etapas
 
 O desenvolvimento será dividido em duas etapas. A primeira etapa será voltada para o desenvolvimento da preview do site, será somente uma tela com o nome do hacktoberfest, seguindo um design específico, ela será usada inicialmente para a divulgação do site e deve ser desenvolvida o mais rápido possível. A segunda etapa focará o desenvolvimento do site em si e deve ser finalizada antes do evento começar (até o final de setembro).
 
-## Fluxo de contribuição
+## Fluxo de desenvolvimento
 
-Na maioria dos casos o fluxo será o seguinte: o supervisor criará issues para orientar as necessidades do desenvolvimento em relação a componentes que deverão ser criados, o voluntário que estiver disposto a desenvolver a issue deve comentar na descrição da mesma pedindo o assign para começar a desenvolver. Com o assign em mãos, o voluntário deve criar uma nova branch no formato 'feature/issue#NUMERO_DA_ISSUE'.
+Na maioria dos casos o fluxo será o seguinte: 
+1. O supervisor cria uma issue
+2. O voluntário que estiver disposto a desenvolver a issue deve comentar na descrição da mesma pedindo o assign para começar a desenvolver
+3. O supervisor dá o assign da issue para o desenvolvedor
+4. O desenvolvedor cria uma nova branch a partir de uma das duas branchs principais (preview ou site, dependendo de qual a issue está se referindo) no formato 'feature/issue#NUMERO_DA_ISSUE'.
+5. Ao finalizar o desenvolvimento, o desenvolvedor abre um Pull Request para a branch principal de onde foi criada, os outros desenvolvedores estão livres para revisar e apontar erros e/ou melhorias
+6. O supervisor revisa e aprova a PR ou requisita alguma mudança necessária
+
+Obs: É aconselhável que os commits sejam em português e descrevam as respectivas mudanças de forma breve.
+ 
