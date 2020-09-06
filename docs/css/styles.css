@@ -1,0 +1,51 @@
+/* soft reset do css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: I_pixel_u;
+    src: url(../assets/I-pixel-u.ttf);
+}
+
+@font-face {
+    font-family: retro_gaming;
+    src: url(../assets/Retro-Gaming.ttf);
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #121b51, #191650);
+}
+   
+.retro {
+    font-family: retro_gaming;
+}
+
+#home h4 {
+    font-size: 16px;
+    color: #4758b8;
+}
+
+.subtitle, .title {
+    color: #b6b9f2;
+    text-shadow: 3px 0px 0 #4b5cbf;
+}
+
+.subtitle {
+    font-size: 39px;
+    letter-spacing: 12px;
+    
+}
+
+.title {
+    font-family: I_pixel_u;
+    font-size: 70px;
+}
+
