@@ -7,7 +7,15 @@ body {
     --header-background: rgba(18, 27, 81, 0.9);
     --header-font: #6C75A8;
     --header-font-hover: #E8EBFF;
+    width: 100vw;
+
 }
+main {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgba(18, 27, 81); */
+}
+
 
 
 header {
@@ -30,17 +38,44 @@ header {
 #nav-bar {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 
     text-transform: uppercase;
-    font-size: .7rem;
+    font-size: .8rem;
 }
+
+
 
 #nav-bar li {
     padding: .5rem 1.5rem;
 }
 
 #nav-bar li:hover {
-    color: var(--header-font-hover)
+    color: var(--header-font-hover);
+    cursor: pointer;
+}
+
+#more::after {
+    content: url('/docs/assets/img/icon-mais-menu.svg');
+    margin-left: .5rem;
+}
+
+#more-information:hover {
+    outline: thin solid #4A5387;
+    z-index: 4;
+}
+
+#more:hover::after {
+    content: url('/docs/assets/img/light-icon-mais-menu.svg');
+}
+
+#more-information li:nth-child(2), #more-information li:nth-child(3) {
+    display: none;
+}
+
+#more-information:hover #more ~ .hidden {
+    position: relative;
+    display: block;
 }
 
 
