@@ -49,3 +49,21 @@
     font-size: 70px;
 }
 
+/* timer */
+
+#timer-section {
+    margin-top: 100px;
+}
+
+#timer {
+    border: solid 1px #B6B9F2;
+    display: inline-flex;
+    padding: 25px;
+    color: #B6B9F2;
+    font-size: 30px;
+    font-family: retro_gaming;
+}
+
+.time-label {
+    color: #616a9d;
+}
