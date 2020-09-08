@@ -4,7 +4,9 @@
 }
 
 body {
-    --header-background: rgba(18, 27, 81, 0.9);
+
+
+    --blue-low-opacity: rgba(18, 27, 81, 0.9);
     --header-font: #6C75A8;
     --header-font-hover: #E8EBFF;
     width: 100vw;
@@ -29,7 +31,7 @@ header {
 
     padding: 1.25rem 5rem;
 
-    background-color: var(--header-background);
+    background-color: var(--blue-low-opacity);
     
     font-family: 'retro-gaming';
     color: var(--header-font)
@@ -39,52 +41,57 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
     text-transform: uppercase;
     font-size: .8rem;
 }
 
-
-
-#nav-bar li {
+.nav-links {
     padding: .5rem 1.5rem;
 }
 
-#nav-bar li:hover {
+.nav-links:hover {
     color: var(--header-font-hover);
     cursor: pointer;
+}
+
+#more-information {
+    position: relative;
+    display: inline-block;
+    align-items: center;
 }
 
 #more::after {
     content: url('/docs/assets/img/icon-mais-menu.svg');
     margin-left: .5rem;
 }
-
-#more-information:hover {
-    outline: thin solid #4A5387;
-    z-index: 4;
-}
-
 #more:hover::after {
     content: url('/docs/assets/img/light-icon-mais-menu.svg');
 }
 
-#more-information li:nth-child(2), #more-information li:nth-child(3) {
+#more-information:hover{
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue-low-opacity);
+}
+
+#more-information:hover .hidden-content {
+    display: block;
+    position: absolute;
+    max-width: 6.7rem;
+    background-color: var(--blue-low-opacity);
+}
+
+.hidden-content{
     display: none;
 }
 
-#more-information:hover #more ~ .hidden {
-    position: relative;
-    display: block;
+#countdown-timer {
+    box-sizing: border-box;
+
+    padding: 0.8rem 1rem;
+    border: thin solid #B6B9F2;
 }
 
-
-
-#countdown-timer {
-
-    box-sizing: border-box;
-    padding: 0.8rem 1rem;
-    
-    border: thin solid #B6B9F2;
-
+#countdown-timer span {
+    color: #B6B9F2;
 }

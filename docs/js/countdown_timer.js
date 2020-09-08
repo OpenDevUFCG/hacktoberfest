@@ -9,7 +9,7 @@ const timer = setInterval(function() {
     const { days, hours, minutes, seconds } = convertDistance(distance);
 
 
-    document.getElementById("countdown-timer").textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    document.getElementById("countdown-timer").innerHTML = `<span>${days}</span>d <span>${hours}</span>h <span>${minutes}</span>m <span>${seconds}</span>s`;
 
     if (distance < 0) {
         clearInterval(timer);
