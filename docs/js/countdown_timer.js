@@ -3,16 +3,17 @@ const eventDate = new Date("October 7, 2020 00:00:00").getTime();
 
 const timer = setInterval(function() {
     const currentDate = new Date().getTime();
-
     const distance = eventDate - currentDate;
 
     const { days, hours, minutes, seconds } = convertDistance(distance);
 
-
-    document.getElementById("countdown-timer").innerHTML = `<span>${days}</span>d <span>${hours}</span>h <span>${minutes}</span>m <span>${seconds}</span>s`;
+    document.getElementById("days").textContent = days
+    document.getElementById("hours").textContent = hours
+    document.getElementById("minutes").textContent = minutes
+    document.getElementById("seconds").textContent = seconds
 
     if (distance < 0) {
-        clearInterval(timer);
+        clearInterval(timerFormat);
         document.getElementById("countdown-timer").textContent = "É hoje!"
     }
 
