@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Hacktoberfest 2020</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <section id="home">
+    <section class="crt" id="home">
         <h4 class="retro">OUTUBRO DE 2020</h4>
-        <img id="logo" src="./assets/logo.svg" alt="Logo" />
+        
+        <div id="loader" class="loading" ></div>
+            <img id="logo" src="./assets/logo.svg" alt="Logo" />
+        </div>
 
+        <div class="content">
+            <div class="glitch">
+                 <div class="glitchit"></div>
+                 <div class="glitchit"></div>
+                 <div class="glitchit"></div>
+                 <div class="glitchit"></div>
+                 <div class="glitchit"></div>
+            </div>
+        </div>
+            
         <div id="timer-section">
             <div id="timer">
                 <div id="days"></div> <span class="time-label">d</span> &nbsp
@@ -21,6 +35,8 @@
         </div>
       
     </section>
-    <script src="./js/timer.js"></script>
+
+    <script src="./js/timer.js"></script> 
+    <script src="./js/loader.js"></script>
 </body>
 </html>
