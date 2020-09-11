@@ -31,22 +31,11 @@
 #home h4 {
     font-size: 16px;
     color: #4758b8;
+    margin-bottom: 30px;
 }
 
-.subtitle, .title {
-    color: #b6b9f2;
-    text-shadow: 3px 0px 0 #4b5cbf;
-}
-
-.subtitle {
-    font-size: 39px;
-    letter-spacing: 12px;
-    
-}
-
-.title {
-    font-family: I_pixel_u;
-    font-size: 70px;
+#logo {
+    margin: 0 25px;
 }
 
 /* timer */
@@ -58,12 +47,28 @@
 #timer {
     border: solid 1px #B6B9F2;
     display: inline-flex;
-    padding: 25px;
+    padding: 20px;
     color: #B6B9F2;
-    font-size: 30px;
+    font-size: 25px;
     font-family: retro_gaming;
 }
 
 .time-label {
     color: #616a9d;
+}
+
+@media (max-width: 700px) {
+    #home h4 {
+        margin-bottom: 0;
+    }
+
+    #timer {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    #timer-section {
+        margin-top: 60px;
+    }
+
 }
