@@ -15,11 +15,20 @@ calculateTime = () => {
     return {days, hours, minutes, seconds}
 } 
 
+refreshTimer = () => {
+    interval -= 1000
+    if(interval <= 0){
+        interval = 0
+    }
+
+    displayTimer();
+}
+
 startTimer = () => {
     calculateInterval()
     displayTimer()
 
-    setInterval(displayTimer, 1000);
+    setInterval(refreshTimer, 1000);
 }
 
 displayTimer = () => {
