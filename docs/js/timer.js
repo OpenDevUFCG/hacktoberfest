@@ -1,16 +1,16 @@
 var interval = 0
 
 calculateInterval = () => {
-    var startDate = new Date()
-    var endDate = new Date("October 01, 2020 00:00:00")
+    const startDate = new Date()
+    const endDate = new Date("October 01, 2020 00:00:00")
     interval = endDate - startDate
 }
 
 calculateTime = () => {
-    var days = Math.floor(interval / (1000*3600*24))
-    var hours = Math.floor(interval % (1000*3600*24) / (1000 * 3600))
-    var minutes = Math.floor(interval % (1000*3600*24) % (1000 * 3600) / (1000 * 60))
-    var seconds = Math.floor(interval % (1000*3600*24) % (1000 * 3600) % (1000 * 60) / 1000)
+    const days = Math.floor(interval / (1000*3600*24))
+    const hours = Math.floor(interval % (1000*3600*24) / (1000 * 3600))
+    const minutes = Math.floor(interval % (1000*3600*24) % (1000 * 3600) / (1000 * 60))
+    const seconds = Math.floor(interval % (1000*3600*24) % (1000 * 3600) % (1000 * 60) / 1000)
 
     return {days, hours, minutes, seconds}
 } 
