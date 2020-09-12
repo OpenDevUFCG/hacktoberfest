@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'retro-gaming';
-    src: url('/docs/assets/fonts/Retro\ Gaming.ttf')
+    src: url('../assets/fonts/Retro\ Gaming.ttf')
 }
 
 body {
@@ -52,11 +52,11 @@ header {
 
 
 #more::after {
-    content: url('/docs/assets/img/icon-mais-menu.svg');
+    content: url('../assets/img/icon-mais-menu.svg');
     margin-left: 0.5rem;
 }
 #more:hover::after {
-    content: url('/docs/assets/img/light-icon-mais-menu.svg');
+    content: url('../assets/img/light-icon-mais-menu.svg');
 }
 
 
