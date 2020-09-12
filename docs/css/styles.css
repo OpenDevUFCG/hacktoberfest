@@ -13,11 +13,6 @@ body {
 
 }
 
-main {
-    height: 300vh;
-    background-color: var(--solid-blue);
-}
-
 header {
     display: flex;
     justify-content: space-between;
