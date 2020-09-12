@@ -7,7 +7,7 @@
         flex-direction: column;
         align-items: center;
     
-        background-color:var(--solid-blue);
+        background-color: var(--solid-blue);
     }
     
     #more-information:hover .hidden-content {
@@ -34,10 +34,10 @@
 
 @media (max-width: 880px) {
     header {
-        --blue-low-opacity: rgba(18, 27, 81, 0.9);
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+
         width: 100vw;
 
         align-items: flex-start;
@@ -52,7 +52,7 @@
     }
     
     #logo {
-        width: 11rem;
+        width: 13rem;
     }
     
     /* burguer button */
@@ -60,17 +60,19 @@
         display: grid;
         gap: .1rem;
         place-items: center;
-        height: 1.2rem;
         position: relative;
+
+        height: 1.2rem;
         cursor: pointer;
-    
     }
     
     #burguer-button span {
+        display: block;
+
         width: 1.5rem;
         height: .2rem;
-        background-color: #B6B9F2;
-        display: block;
+
+        background-color: var(--light-purple);
         transition: all 0.2s ease-in-out;
     }
     
@@ -95,16 +97,15 @@
     
     #nav-bar {
         display: none;
-        
     }
     
     #nav-bar.hidden-content {
         display: flex;
-        overflow: hidden;
-        font-size: 0.8rem;
         gap: 1rem;
+        overflow: hidden;
         align-items: center;
-        /* background-color: red; */
+
+        font-size: 0.8rem;
     }   
     
     #more {
@@ -119,8 +120,7 @@
     }
     
     .hidden-content {
-        display: flex;
-    
+        display: block;
     }
     
     #countdown-timer-container {
@@ -138,13 +138,6 @@
     
         background-color: var(--blue-low-opacity);
     }
-    
-    #countdown-timer {
-        background-color: var(--blue-low-opacity);
-    
-        align-self: center;
-        bottom: 0;
-    }
 }
 
 @media (max-width: 650px) {
@@ -152,5 +145,9 @@
         flex-direction: column;
         gap: 2.5rem;
         font-size: 0.9rem;
+    }
+
+    #logo {
+        width: 10rem;
     }
 }

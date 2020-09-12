@@ -12,6 +12,7 @@ body {
     width: 100%;
 
 }
+
 main {
     height: 300vh;
     background-color: var(--solid-blue);
