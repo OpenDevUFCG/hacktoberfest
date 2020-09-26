@@ -1,78 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
-    font-family: 'retro-gaming';
-    src: url('../assets/fonts/Retro\ Gaming.ttf')
+  font-family: "retro-gaming";
+  src: url("../assets/fonts/Retro\ Gaming.ttf");
+}
+
+@font-face {
+  font-family: I_pixel_u;
+  src: url(../assets/fonts/I-pixel-u.ttf);
 }
 
 body {
-    --blue-low-opacity: rgba(18, 27, 81, 0.9);
-    --solid-blue: rgba(18, 27, 81);
-    --light-purple: #B6B9F2;
-    --header-font: #6C75A8;
-    --header-font-hover: #E8EBFF;
-    width: 100%;
-
+  --blue-low-opacity: rgba(18, 27, 81, 0.9);
+  --solid-blue: rgba(18, 27, 81);
+  --light-purple: #b6b9f2;
+  --header-font: #6c75a8;
+  --header-font-hover: #e8ebff;
+  width: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  background-color: #0e1434;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 
+  position: fixed; */
 
-    position: fixed;
+  padding: 1.25rem 5rem;
 
-    padding: 1.25rem 5rem;
+  background-color: var(--blue-low-opacity);
 
-    background-color: var(--blue-low-opacity);
-    
-    font-family: 'retro-gaming';
-    color: var(--header-font);
+  font-family: "retro-gaming";
+  color: var(--header-font);
 }
 
 #nav-bar {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    text-transform: uppercase;
-    font-size: 0.7rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
 }
 
 .nav-links {
-    padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .nav-links:hover {
-    color: var(--header-font-hover);
-    cursor: pointer;
+  color: var(--header-font-hover);
+  cursor: pointer;
 }
 
 #more-information {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
-
 
 #more::after {
-    content: url('../assets/img/icon-mais-menu.svg');
-    margin-left: 0.5rem;
+  content: url("../assets/img/icon-mais-menu.svg");
+  margin-left: 0.5rem;
 }
 #more:hover::after {
-    content: url('../assets/img/light-icon-mais-menu.svg');
+  content: url("../assets/img/light-icon-mais-menu.svg");
 }
 
-
-.hidden-content{
-    display: none;
+.hidden-content {
+  display: none;
 }
 
 #countdown-timer {
-    display: flex;
-    gap: 0.5rem;
-    box-sizing: border-box;
-    width: 12.5rem;
-    padding: 0.75rem 1rem;
-    border: thin solid var(--light-purple);
+  display: flex;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  width: 12.5rem;
+  padding: 0.75rem 1rem;
+  border: thin solid var(--light-purple);
 }
 
 #countdown-timer span {
-    color: var(--light-purple);
+  color: var(--light-purple);
+}
+
+#previous-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#previous-events h2 {
+  font-family: I_pixel_u;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: #fff;
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+.carousel-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-container {
+  width: 1030px;
+  height: 515px;
+  background: rgba(18, 27, 81, 0.9);
+  overflow: hidden;
+}
+
+.carousel-container img {
+  width: 1030px;
+  height: 515px;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 1030px;
+  height: 515px;
+}
+
+#arrow-left {
+  height: 1.8em;
+  width: 1.8em;
+  border: 0.880342px solid #ced2ec;
+  background: #182466;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  left: 1%;
+}
+
+#arrow-right {
+  height: 1.8em;
+  width: 1.8em;
+  border: 0.880342px solid #ced2ec;
+  background: #182466;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  right: 1%;
 }
