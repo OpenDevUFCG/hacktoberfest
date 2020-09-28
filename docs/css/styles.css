@@ -21,8 +21,9 @@ body {
   --header-font: #6c75a8;
   --header-font-hover: #e8ebff;
   width: 100%;
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+
+  flex-direction: column;
   background-color: #0e1434;
 }
 
@@ -30,9 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* 
-  position: fixed; */
-
+  position: fixed;
   padding: 1.25rem 5rem;
 
   background-color: var(--blue-low-opacity);
@@ -93,6 +92,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 #previous-events h2 {
@@ -114,20 +114,22 @@ header {
 }
 
 .carousel-container {
-  width: 1030px;
+  max-width: 1030px;
+  width: 80vw;
   height: 515px;
   background: rgba(18, 27, 81, 0.9);
   overflow: hidden;
 }
 
 .carousel-container img {
-  width: 1030px;
+  width: 100%;
+  min-width: 100%;
   height: 515px;
 }
 
 .carousel-slide {
   display: flex;
-  width: 1030px;
+  width: 100%;
   height: 515px;
 }
 
