@@ -3,7 +3,15 @@ let carouselImages = document.querySelectorAll(".carousel-slide div");
 
 getImg = (index, idName) => {
   let img = document.createElement("div");
-  img.setAttribute("style", "background-image: ", carouselImages[index].src);
+
+  img.setAttribute(
+    "style",
+    "background-image: url(" + carouselImages[index].style.backgroundImage + ")"
+  );
+
+  // img.body.style.backgroundImage =
+  //   "url(" + carouselImages[index].style.backgroundImage + ")";
+
   img.setAttribute("id", idName);
   return img;
 };
@@ -15,6 +23,14 @@ if (carouselImages.length > 1) {
   );
   carouselSlide.appendChild(getImg(0, "last"));
 }
+
+// setAttribute(
+//   "style",
+//   "background-image: url(" +
+//     dir +
+//     images[randomCount] +
+//     ");background-repeat: no-repeat;background-size: 388px 388px"
+// );
 
 carouselImages = document.querySelectorAll(".carousel-slide div");
 
