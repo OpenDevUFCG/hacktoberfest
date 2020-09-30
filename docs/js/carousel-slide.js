@@ -6,12 +6,9 @@ getImg = (index, idName) => {
 
   img.setAttribute(
     "style",
-    "background-image: url(" + carouselImages[index].style.backgroundImage + ")"
+    "background-image: " + carouselImages[index].style.backgroundImage
   );
-
-  // img.body.style.backgroundImage =
-  //   "url(" + carouselImages[index].style.backgroundImage + ")";
-
+  img.setAttribute("class", "divImg");
   img.setAttribute("id", idName);
   return img;
 };
