@@ -138,6 +138,10 @@
     
         background-color: var(--blue-low-opacity);
     }
+
+    #previous-events h2 {
+        font-size: 1.4em;
+    }
 }
 
 @media (max-width: 650px) {
@@ -149,5 +153,9 @@
 
     #logo {
         width: 10rem;
+    }
+
+    #previous-events h2 {
+        font-size: 1.1em;
     }
 }
