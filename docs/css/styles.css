@@ -3,14 +3,25 @@
     src: url('../assets/fonts/Retro\ Gaming.ttf')
 }
 
+@font-face {
+    font-family: 'roboto-mono';
+    src: url('../assets/fonts/RobotoMono.ttf')
+}
+
 body {
     --blue-low-opacity: rgba(18, 27, 81, 0.9);
     --solid-blue: rgba(18, 27, 81);
     --light-purple: #B6B9F2;
+    --light-blue: rgba(156,168,240,1);
     --header-font: #6C75A8;
     --header-font-hover: #E8EBFF;
     width: 100%;
+    background: linear-gradient(180deg, #111B51 9.57%, #35024E 18.85%, #100E36 50.21%, #090F32 80.27%, #35024E 100%);
+    height: 100vh;
+}
 
+section {
+    padding: 0 5vw;
 }
 
 header {
@@ -18,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    position: fixed;
+    position: relative;
 
     padding: 1.25rem 5rem;
 
@@ -75,4 +86,73 @@ header {
 
 #countdown-timer span {
     color: var(--light-purple);
+}
+
+.disable {
+    display: none;
+}
+
+#faq {
+    font-family: 'retro-gaming';
+}
+
+#faq h2 {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+#faq-container {
+    color: #fff;
+    background-color: var(--blue-low-opacity);
+    padding: 30px 50px;
+    height: 500px;
+}
+
+#faq-list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.faq-item {
+    height: 50%;
+    width: 80%;
+}
+
+.faq-item .question {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.faq-item .answer {
+    font-family: 'roboto-mono';
+    color: #A5A9BC;
+}
+
+#faq-menu {
+    color: var(--light-blue);
+    width: fit-content;
+    padding:8px 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+#faq-menu ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.control-btn {
+    background-color: transparent;
+    border: 1px solid var(--light-blue);
+    border: none;
+    color: var(--light-blue);
+}
+
+.active {
+    color: #fff;
 }
