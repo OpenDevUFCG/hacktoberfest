@@ -24,14 +24,6 @@ if (carouselImages.length > 1) {
   carouselSlide.appendChild(getImg(0, "last"));
 }
 
-// setAttribute(
-//   "style",
-//   "background-image: url(" +
-//     dir +
-//     images[randomCount] +
-//     ");background-repeat: no-repeat;background-size: 388px 388px"
-// );
-
 carouselImages = document.querySelectorAll(".carousel-slide div");
 
 //buttons
