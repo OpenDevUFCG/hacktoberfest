@@ -2,7 +2,7 @@ const carouselSlide = document.querySelector(".carousel-slide");
 let carouselImages = document.querySelectorAll(".carousel-slide div");
 
 getImg = (index, idName) => {
-  let img = document.createElement("div");
+  const img = document.createElement("div");
 
   img.setAttribute(
     "style",
