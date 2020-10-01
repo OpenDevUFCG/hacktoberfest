@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/responsivity.css">
     <!-- <link rel="stylesheet" href="css/glitch.css"> -->
     <title>Hacktoberfest 2020</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
         <div id="logo-container">
             <svg id="header-logo" width="200" height="37" viewBox="0 0 200 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,9 @@
                 <p><span class="minutes"></span>m</p>
                 <p><span class="seconds"></span>s</p>
             </div>
-        </div>
+          </div>
+        </ul>
+      </nav>
     </header>
     <section class="crt" id="home">
       <h4 class="retro">OUTUBRO DE 2020</h4>
@@ -81,22 +83,22 @@
           <ul id="social-media-container">
             <li class="social-media-img">
               <a href="https://twitter.com/OpenDevUFCG"
-                ><img src="./assets/img/twitter.svg"
+                ><img src="./assets/img/social-icons/twitter.svg"
               /></a>
             </li>
             <li class="social-media-img">
               <a href="https://www.instagram.com/opendevufcg/"
-                ><img src="./assets/img/instagram.svg"
+                ><img src="./assets/img/social-icons/instagram.svg"
               /></a>
             </li>
             <li class="social-media-img">
               <a href="https://discord.com/invite/NQAXzq"
-                ><img src="./assets/img/discord.svg"
+                ><img src="./assets/img/social-icons/discord.svg"
               /></a>
             </li>
             <li class="social-media-img">
               <a href="https://github.com/OpenDevUFCG"
-                ><img src="./assets/img/github.svg"
+                ><img src="./assets/img/social-icons/github.svg"
               /></a>
             </li>
           </ul>
@@ -106,9 +108,26 @@
     <section id="about"></section>
     <section id="schedule"></section>
     <section id="faq"></section>
-    <section id="previous-events"></section>
+    <section id="previous-events">
+      <div>
+        <h2>EVENTOS ANTERIORES</h2>
+        <div class="carousel-box">
+          <button id="arrow-left">
+            <img src="./assets/img/icons/carousel-left.svg" />
+          </button>
+          <div class="carousel-container">
+            <div class="carousel-slide">
+            </div>
+          </div>
+          <button id="arrow-right">
+            <img src="./assets/img/icons/carousel-right.svg" />
+          </button>
+        </div>
+      </div>
+    </section>
     <footer></footer>
     <script src="../docs/js/countdown_timer.js"></script>
     <script src="../docs/js/burguer_menu.js"></script>
-</body>
+    <script src="../docs/js/carousel-slide.js"></script>
+  </body>
 </html>

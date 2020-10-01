@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'retro-gaming';
     src: url('../assets/fonts/Retro\ Gaming.ttf');
@@ -44,26 +50,25 @@ header {
 }
 
 .nav-links {
-    padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .nav-links:hover {
-    color: var(--header-font-hover);
-    cursor: pointer;
+  color: var(--header-font-hover);
+  cursor: pointer;
 }
 
 #more-information {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
-
 
 #more::after {
-    content: url('../assets/img/icon-mais-menu.svg');
-    margin-left: 0.5rem;
+  content: url("../assets/img/icons/icon-mais-menu.svg");
+  margin-left: 0.5rem;
 }
 #more:hover::after {
-    content: url('../assets/img/light-icon-mais-menu.svg');
+  content: url("../assets/img/icons/light-icon-mais-menu.svg");
 }
 
 .hidden-content{
@@ -71,12 +76,12 @@ header {
 }
 
 #countdown-timer {
-    display: flex;
-    gap: 0.5rem;
-    box-sizing: border-box;
-    width: 12.5rem;
-    padding: 0.75rem 1rem;
-    border: thin solid var(--light-purple);
+  display: flex;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  width: 12.5rem;
+  padding: 0.75rem 1rem;
+  border: thin solid var(--light-purple);
 }
 
 #countdown-timer span {
@@ -260,4 +265,84 @@ header {
     font-style: normal;
     line-height: 48, 56px;
   }
+}
+
+/* Previus Events Section */
+
+#previous-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#previous-events h2 {
+  font-family: I_pixel_u;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: #fff;
+  margin: 0 0 1.2rem 1.6rem;
+  padding: 0;
+}
+
+.carousel-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-container {
+  max-width: 1030px;
+  width: 80vw;
+  background: rgba(18, 27, 81, 0.9);
+  overflow: hidden;
+}
+
+.divImg {
+  width: 100%;
+  min-width: 100%;
+  height: 0;
+  padding-bottom: 56.2%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+}
+
+#arrow-left {
+  height: 1.8em;
+  width: 1.8em;
+  border: 0.880342px solid #ced2ec;
+  background: #182466;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  left: 1%;
+}
+
+#arrow-right {
+  height: 1.8em;
+  width: 1.8em;
+  border: 0.880342px solid #ced2ec;
+  background: #182466;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  right: 1%;
 }
