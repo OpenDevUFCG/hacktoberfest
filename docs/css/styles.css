@@ -1,6 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'retro-gaming';
-    src: url('../assets/fonts/Retro\ Gaming.ttf')
+    src: url('../assets/fonts/Retro\ Gaming.ttf');
+}
+
+@font-face {
+  font-family: I_pixel_u;
+  src: url('../assets/fonts/I-pixel-u.ttf');
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -16,81 +31,75 @@ body {
     --header-font: #6C75A8;
     --header-font-hover: #E8EBFF;
     width: 100%;
-    background: linear-gradient(180deg, #111B51 9.57%, #35024E 18.85%, #100E36 50.21%, #090F32 80.27%, #35024E 100%);
-    height: 100vh;
+    background: #24224f;
+    font-family: 'retro-gaming';
 }
 
-section {
-    padding: 0 5vw;
-}
+/* Header Section */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    position: relative;
+    height: 10vh;
 
     padding: 1.25rem 5rem;
-
-    background-color: var(--blue-low-opacity);
     
-    font-family: 'retro-gaming';
     color: var(--header-font);
+}
+
+.fixed {
+  position: fixed;
 }
 
 #nav-bar {
     display: flex;
     justify-content: space-between;
-
     text-transform: uppercase;
     font-size: 0.7rem;
 }
 
 .nav-links {
-    padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .nav-links:hover {
-    color: var(--header-font-hover);
-    cursor: pointer;
+  color: var(--header-font-hover);
+  cursor: pointer;
 }
 
 #more-information {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
-
 
 #more::after {
-    content: url('../assets/img/icon-mais-menu.svg');
-    margin-left: 0.5rem;
+  content: url("../assets/img/icons/icon-mais-menu.svg");
+  margin-left: 0.5rem;
 }
 #more:hover::after {
-    content: url('../assets/img/light-icon-mais-menu.svg');
+  content: url("../assets/img/icons/light-icon-mais-menu.svg");
 }
-
 
 .hidden-content{
     display: none;
 }
 
 #countdown-timer {
-    display: flex;
-    gap: 0.5rem;
-    box-sizing: border-box;
-    width: 12.5rem;
-    padding: 0.75rem 1rem;
-    border: thin solid var(--light-purple);
+  display: flex;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  width: 12.5rem;
+  padding: 0.75rem 1rem;
+  border: thin solid var(--light-purple);
 }
 
 #countdown-timer span {
     color: var(--light-purple);
 }
 
-.disable {
-    display: none;
-}
+
+/* FAQ Section */
 
 #faq {
     font-family: 'retro-gaming';
@@ -155,4 +164,263 @@ header {
 
 .active {
     color: #fff;
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+}
+
+#home h4 {
+  font-size: 16px;
+  color: #4758b8;
+  margin-bottom: 30px;
+}
+
+#logo {
+  margin: 0 25px;
+}
+
+/* timer */
+
+#timer-section {
+  margin-top: 100px;
+}
+
+#timer {
+  border: solid 1px #B6B9F2;
+  display: inline-flex;
+  padding: 20px;
+  color: #B6B9F2;
+  font-size: 25px;
+}
+
+.time-label {
+  color: #616a9d;
+}
+
+@media (max-width: 700px) {
+  #home h4 {
+      margin-bottom: 0;
+  }
+
+  #timer {
+      padding: 15px;
+      font-size: 20px;
+  }
+
+  #timer-section {
+      margin-top: 20px;
+  }
+
+}
+
+/* Anouncement Section */
+
+#eventAnnouncment {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.announcementMediaContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.box {
+  border: 1.02807px solid #9ca8f0;
+  box-sizing: border-box;
+  font-family: I_pixel_u;
+  color: #9ca8f0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 5em;
+  justify-content: center;
+  font-weight: 400;
+  margin: 1.5em;
+  max-width: 769px;
+}
+
+.box h1 {
+  padding: 0;
+  max-width: 644, 19px;
+  font-size: 1.4em;
+  font-style: normal;
+  line-height: 48, 56px;
+}
+
+#social-media-container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#social-media {
+  padding: 0;
+  width: 100%;
+  height: 10%;
+}
+
+.social-media-img {
+  margin: 0.8em;
+}
+
+@media (max-width: 800px) {
+  #eventAnnouncment {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .announcementMediaContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .box {
+    border: 1.02807px solid #9ca8f0;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 5em;
+    justify-content: center;
+    font-weight: 400;
+  }
+
+  .box h1 {
+    padding: 4px;
+    font-size: 1.2em;
+    font-style: normal;
+    line-height: 48, 56px;
+  }
+
+  #social-media {
+    padding: 0;
+    width: 100%;
+    height: 10%;
+  }
+
+  .social-media-img {
+    margin: 0.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  .box h1 {
+    padding: 4px;
+    font-size: 0.8em;
+    font-style: normal;
+    line-height: 48, 56px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box h1 {
+    padding: 4px;
+    font-size: 1.4em;
+    font-style: normal;
+    line-height: 48, 56px;
+  }
+}
+
+/* Previus Events Section */
+
+#previous-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#previous-events h2 {
+  font-family: I_pixel_u;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: #fff;
+  margin: 0 0 1.2rem 1.6rem;
+  padding: 0;
+}
+
+.carousel-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-container {
+  max-width: 1030px;
+  width: 80vw;
+  background: rgba(18, 27, 81, 0.9);
+  overflow: hidden;
+}
+
+.divImg {
+  width: 100%;
+  min-width: 100%;
+  height: 0;
+  padding-bottom: 56.2%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+}
+
+#arrow-left {
+  height: 1.8em;
+  width: 1.8em;
+  border: 0.880342px solid #ced2ec;
+  background: #182466;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  left: 1%;
+}
+
+#arrow-right {
+  height: 1.8em;
+  width: 1.8em;
+  border: 0.880342px solid #ced2ec;
+  background: #182466;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  right: 1%;
 }
