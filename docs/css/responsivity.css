@@ -1,7 +1,4 @@
 @media (min-width: 600px) {
-    header {
-        width:100vw;
-    }
 
     #more-information:hover{
         flex-direction: column;
@@ -51,7 +48,7 @@
         width: 100%;
     }
     
-    #logo {
+    #header-logo {
         width: 13rem;
     }
     
@@ -124,19 +121,7 @@
     }
     
     #countdown-timer-container {
-        display: flex;
-        justify-content: center;
-        
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    
-        box-sizing: border-box;
-        width: 100vw;
-        padding: 0.5rem 0;
-    
-        background-color: var(--blue-low-opacity);
+        display: none;
     }
 
     #previous-events h2 {
@@ -151,7 +136,7 @@
         font-size: 0.9rem;
     }
 
-    #logo {
+    #header-logo {
         width: 10rem;
     }
 

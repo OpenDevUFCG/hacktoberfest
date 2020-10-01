@@ -2,7 +2,7 @@ var interval = 0
 
 calculateInterval = () => {
     const startDate = new Date()
-    const endDate = new Date("October 01, 2020 00:00:00")
+    const endDate = new Date("October 03, 2020 14:00:00")
     interval = endDate - startDate
 }
 
@@ -34,10 +34,21 @@ startTimer = () => {
 displayTimer = () => {
     const { days, hours, minutes, seconds } = calculateTime()
 
-    document.getElementById('days').innerHTML = fillZeroes(days)
-    document.getElementById('hours').innerHTML = fillZeroes(hours)
-    document.getElementById('minutes').innerHTML = fillZeroes(minutes)
-    document.getElementById('seconds').innerHTML = fillZeroes(seconds)
+    setValueToTimer('.days', days)
+    setValueToTimer('.hours', hours)
+    setValueToTimer('.minutes', minutes)
+    setValueToTimer('.seconds', seconds)
+    // document.getElementById('days').innerHTML = fillZeroes(days)
+    // document.getElementById('hours').innerHTML = fillZeroes(hours)
+    // document.getElementById('minutes').innerHTML = fillZeroes(minutes)
+    // document.getElementById('seconds').innerHTML = fillZeroes(seconds)
+}
+
+setValueToTimer = (selector, value) => {
+    const elements = document.querySelectorAll(selector)
+    for(let i = 0; i < elements.length; i++){
+        elements[i].innerHTML = fillZeroes(value)
+    }
 }
 
 

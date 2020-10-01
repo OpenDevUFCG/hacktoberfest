@@ -18,7 +18,7 @@ getImg = (path, idName) => {
 
 initImgs = () => {
   imgs.forEach( img => {
-    const divImg = getImg("url('./assets/img/" + img + "')", "")
+    const divImg = getImg("url('./assets/img/carousel-images/" + img + "')", "")
     carouselSlide.appendChild(divImg);
   });
   
