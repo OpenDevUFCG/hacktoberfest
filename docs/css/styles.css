@@ -23,6 +23,16 @@ html {
     src: url('../assets/fonts/RobotoMono.ttf')
 }
 
+section {
+  padding: 25px 20vw;
+}
+
+@media (max-width: 768px){
+  section{
+    padding: 50px 5vw;
+  }
+}
+
 body {
     --blue-low-opacity: rgba(18, 27, 81, 0.9);
     --solid-blue: rgba(18, 27, 81);
@@ -102,68 +112,125 @@ header {
 /* FAQ Section */
 
 #faq {
-    font-family: 'retro-gaming';
+  color: #fff;
 }
 
 #faq h2 {
-    color: #fff;
-    font-size: 2em;
-    margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-family: I_pixel_u;
+  font-size: 2.5em;
 }
 
-
 #faq-container {
-    color: #fff;
-    background-color: var(--blue-low-opacity);
-    padding: 30px 50px;
-    height: 500px;
+  background: #121B51;
+  display: flex;
+  align-items: center;
 }
 
 #faq-list {
-    width: 100%;
-    height: 100%;
-    position: relative;
+  height: 400px;
+  padding: 30px;
+  width: 90%;
 }
 
 .faq-item {
-    height: 50%;
-    width: 80%;
+  height: 50%;
 }
 
 .faq-item .question {
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .faq-item .answer {
-    font-family: 'roboto-mono';
-    color: #A5A9BC;
-}
-
-#faq-menu {
-    color: var(--light-blue);
-    width: fit-content;
-    padding:8px 15px;
-    position: absolute;
-    right: 0;
-    top: 50%;
+  color: #A5A9BC;
+  font-size: 0.9em;
+  font-family: 'roboto-mono';
 }
 
 #faq-menu ul {
-    list-style: none;
+  display: flex;
+}
+
+#faq-menu button {
+  border: none;
+  display: flex;
+  align-items:center;
+  background: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: 1px solid #A5A9BC;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: 'retro-gaming';
+}
+
+#faq-menu button img {
+  margin-left: 5px;
+}
+
+#faq-menu button:hover {
+  transform: scale(1.05);
+}
+
+#faq-menu ul li {
+  margin: 0 5px;
+  color: #A5A9BC;
+}
+
+.btn-active {
+  color: #fff !important;
+}
+
+@media (max-width: 1080px) {
+  .faq-item .question {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .faq-item .answer {
+    color: #A5A9BC;
+    font-size: 0.8em;
+    font-family: 'roboto-mono';
+  }
+}
+
+@media (max-width: 768px) {
+
+  #faq-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #faq h2 {
+    font-size: 1.5em;
+  }
+
+  #faq-list {
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .faq-item {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  .faq-item .question {
+    margin-bottom: 5px;
+    font-size:  0.8em;
+  }
+  
+  .faq-item .answer {
+    font-size: 0.7em;
+  }
+
+  #faq-menu {
     display: flex;
-
-}
-
-.control-btn {
-    background-color: transparent;
-    border: 1px solid var(--light-blue);
-    border: none;
-    color: var(--light-blue);
-}
-
-.active {
-    color: #fff;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Home Section */
@@ -240,25 +307,20 @@ header {
 }
 
 .box {
-  border: 1.02807px solid #9ca8f0;
-  box-sizing: border-box;
+  border: 1px solid #9ca8f0;
   font-family: I_pixel_u;
   color: #9ca8f0;
   text-align: center;
-  display: flex;
-  align-items: center;
-  height: 5em;
-  justify-content: center;
-  font-weight: 400;
+  padding: 10px;
   margin: 1.5em;
-  max-width: 769px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  min-height: 150px;
 }
 
 .box h1 {
-  padding: 0;
-  max-width: 644, 19px;
   font-size: 1.4em;
-  font-style: normal;
   line-height: 48, 56px;
 }
 
@@ -299,21 +361,11 @@ header {
   }
 
   .box {
-    border: 1.02807px solid #9ca8f0;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    height: 5em;
-    justify-content: center;
-    font-weight: 400;
+    min-height: none;
   }
 
   .box h1 {
     padding: 4px;
-    font-size: 1.2em;
-    font-style: normal;
-    line-height: 48, 56px;
   }
 
   #social-media {
@@ -329,23 +381,11 @@ header {
 
 @media (max-width: 400px) {
   .box h1 {
-    padding: 4px;
     font-size: 0.8em;
-    font-style: normal;
-    line-height: 48, 56px;
   }
 }
 
-@media (min-width: 1024px) {
-  .box h1 {
-    padding: 4px;
-    font-size: 1.4em;
-    font-style: normal;
-    line-height: 48, 56px;
-  }
-}
-
-/* Previus Events Section */
+/* Previous Events Section */
 
 #previous-events {
   display: flex;
@@ -424,3 +464,17 @@ header {
   top: 50%;
   right: 1%;
 }
+
+/* Footer */
+
+footer {
+  padding-bottom: 20px;
+  color: #6C75A8;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'roboto-mono';
+}
+
+

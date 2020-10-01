@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
     renderQuestionPage(current_page)
 })
 
-function setListenerFunctions(){
+const setListenerFunctions = () => {
     const prevBtn = document.querySelector('.prev')
     const nextBtn = document.querySelector('.next')
 
@@ -15,25 +15,25 @@ function setListenerFunctions(){
     nextBtn.addEventListener('click', next)
 }
 
-function getNumPages(){
+const getNumPages = () => {
     return Math.ceil(questions.length/ questions_per_page)
 }
 
-function prev(){
+const prev = () => {
     if(current_page > 1){
         current_page--;
         renderQuestionPage(current_page);
     } 
 }
 
-function next(){
+const next = () =>{
     if(current_page < getNumPages()){
         current_page++;
         renderQuestionPage(current_page);
     }
 }
 
-function renderQuestionPage(page){
+const renderQuestionPage = (page) => {
     const questionContainer = document.getElementById('faq-list');
 
     questionContainer.innerHTML = "";
