@@ -3,7 +3,7 @@ const imgs = ["img1.png", "img2.png", "img3.png", "img4.png", "img5.png"];
 const carouselSlide = document.querySelector(".carousel-slide");
 
 getImg = (path, idName) => {
-  let img = document.createElement("div");
+  const img = document.createElement("div");
 
   img.setAttribute(
     "style",
