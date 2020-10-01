@@ -5,14 +5,7 @@
 
 @font-face {
   font-family: I_pixel_u;
-  src: url(../assets/I-pixel-u.ttf);
-}
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-  background: #24224f;
+  src: url('../assets/fonts/I-pixel-u.ttf');
 }
 
 body {
@@ -22,17 +15,20 @@ body {
     --header-font: #6C75A8;
     --header-font-hover: #E8EBFF;
     width: 100%;
-
+    background: #24224f;
+    font-family: 'retro-gaming';
 }
+
+/* Header Section */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 10vh;
 
     padding: 1.25rem 5rem;
     
-    font-family: 'retro-gaming';
     color: var(--header-font);
 }
 
@@ -86,6 +82,62 @@ header {
 #countdown-timer span {
     color: var(--light-purple);
 }
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+}
+
+#home h4 {
+  font-size: 16px;
+  color: #4758b8;
+  margin-bottom: 30px;
+}
+
+#logo {
+  margin: 0 25px;
+}
+
+/* timer */
+
+#timer-section {
+  margin-top: 100px;
+}
+
+#timer {
+  border: solid 1px #B6B9F2;
+  display: inline-flex;
+  padding: 20px;
+  color: #B6B9F2;
+  font-size: 25px;
+}
+
+.time-label {
+  color: #616a9d;
+}
+
+@media (max-width: 700px) {
+  #home h4 {
+      margin-bottom: 0;
+  }
+
+  #timer {
+      padding: 15px;
+      font-size: 20px;
+  }
+
+  #timer-section {
+      margin-top: 20px;
+  }
+
+}
+
+/* Anouncement Section */
 
 #eventAnnouncment {
   width: 100%;
@@ -195,7 +247,7 @@ header {
 @media (max-width: 400px) {
   .box h1 {
     padding: 4px;
-    font-size: 1.1em;
+    font-size: 0.8em;
     font-style: normal;
     line-height: 48, 56px;
   }
