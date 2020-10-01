@@ -14,6 +14,10 @@
   src: url('../assets/fonts/I-pixel-u.ttf');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     --blue-low-opacity: rgba(18, 27, 81, 0.9);
     --solid-blue: rgba(18, 27, 81);
