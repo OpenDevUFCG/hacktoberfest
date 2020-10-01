@@ -1,27 +1,42 @@
-const carouselSlide = document.querySelector(".carousel-slide");
-let carouselImages = document.querySelectorAll(".carousel-slide div");
+const imgs = ["img1.png", "img2.png", "img3.png", "img4.png", "img5.png"];
 
-getImg = (index, idName) => {
+const carouselSlide = document.querySelector(".carousel-slide");
+
+getImg = (path, idName) => {
   let img = document.createElement("div");
 
   img.setAttribute(
     "style",
-    "background-image: " + carouselImages[index].style.backgroundImage
+    "background-image: " + path
   );
   img.setAttribute("class", "divImg");
-  img.setAttribute("id", idName);
-  return img;
-};
 
-if (carouselImages.length > 1) {
-  carouselSlide.insertBefore(
-    getImg(carouselImages.length - 1, "first"),
-    carouselSlide.childNodes[0]
-  );
-  carouselSlide.appendChild(getImg(0, "last"));
+  if(idName) img.setAttribute("id", idName);
+  return img;
 }
 
-carouselImages = document.querySelectorAll(".carousel-slide div");
+
+initImgs = () => {
+  imgs.forEach( img => {
+    const divImg = getImg("url('./assets/img/" + img + "')", "")
+    carouselSlide.appendChild(divImg);
+  });
+  
+  const backgroundLast = carouselSlide.lastElementChild.style.backgroundImage;
+  const backgroundFirst = carouselSlide.firstElementChild.style.backgroundImage;
+
+  if (carouselSlide.childElementCount > 1) {
+    carouselSlide.insertBefore(
+      getImg(backgroundLast, "first"),
+      carouselSlide.childNodes[0]
+    );
+    carouselSlide.appendChild(getImg(backgroundFirst, "last"));
+  }  
+}
+
+initImgs();
+
+const carouselImages = document.querySelectorAll(".carousel-slide div");
 
 //buttons
 const arrowLeft = document.querySelector("#arrow-left");
