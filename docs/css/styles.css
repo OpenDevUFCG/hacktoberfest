@@ -383,22 +383,26 @@ header {
   }
 }
 
-/* Previous Events Section */
+/* Sections */
+
+.section-title {
+  font-family: I_pixel_u;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: #fff; 
+}
+
+/* Previus Events Section */
 
 #previous-events {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-#previous-events h2 {
-  font-family: I_pixel_u;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2em;
-  color: #fff;
+#previous-events .section-title {
   margin: 0 0 1.2rem 1.6rem;
   padding: 0;
 }
@@ -463,6 +467,34 @@ header {
   right: 1%;
 }
 
+
+/* About Section */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  max-width: 1030px;
+}
+
+.info + .info {
+  margin-top: 80px;
+}
+
+.info p {
+  margin-top: 25px;
+  color: #A5A9BC;
+  font-family: 'roboto-mono';
+  line-height: 1.5;
+}
+
+.info a {
+  text-decoration: underline;
+}
+
 /* Footer */
 
 footer {
@@ -474,5 +506,3 @@ footer {
   text-align: center;
   font-family: 'roboto-mono';
 }
-
-
