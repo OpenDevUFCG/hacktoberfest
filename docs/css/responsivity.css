@@ -124,7 +124,7 @@
         display: none;
     }
 
-    #previous-events h2 {
+    .section-title {
         font-size: 1.4em;
     }
 }
@@ -140,7 +140,7 @@
         width: 10rem;
     }
 
-    #previous-events h2 {
+    .section-title {
         font-size: 1.1em;
     }
 }
