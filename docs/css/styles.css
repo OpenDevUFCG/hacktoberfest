@@ -24,13 +24,10 @@ html {
 }
 
 section {
-  padding: 25px 20vw;
-}
-
-@media (max-width: 768px){
-  section{
-    padding: 50px 5vw;
-  }
+  width: 80vw;
+  max-width: 1080px;
+  margin: auto;
+  padding: 50px 0;
 }
 
 body {
@@ -176,6 +173,7 @@ header {
 #faq-menu ul li {
   margin: 0 5px;
   color: #A5A9BC;
+  cursor: pointer;
 }
 
 .btn-active {

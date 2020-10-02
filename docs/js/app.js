@@ -5,7 +5,39 @@ const itemTemplate = document.querySelector('.faq-template').cloneNode(true);
 window.addEventListener('load', () => {
     setListenerFunctions()
     renderQuestionPage(current_page)
+    loadPagesList()
 })
+
+const loadPagesList = () => {
+    const list = document.querySelector('#faq-menu ul');
+    for(let i = 1; i <= getNumPages(); i++){
+        const elm = document.createElement('li')
+        elm.innerHTML = i
+        elm.id = "page-" + i
+        elm.addEventListener('click', () => {
+            setActivePage(i)
+         })
+
+        list.appendChild(elm)
+    }
+
+    document.querySelector('#faq-menu ul li').classList.add('btn-active')
+}
+
+const clearActivePages = () => {
+    const elements = document.querySelectorAll('#faq-menu ul li');
+
+    for(let i = 0; i < elements.length; i++){
+        elements[i].classList.remove('btn-active')
+    }
+}
+
+const setActivePage = (page) => {
+    current_page = page
+    clearActivePages()
+    document.getElementById('page-'+page).classList.add('btn-active')
+    renderQuestionPage(page)
+}
 
 const setListenerFunctions = () => {
     const prevBtn = document.querySelector('.prev')
@@ -23,14 +55,19 @@ const prev = () => {
     if(current_page > 1){
         current_page--;
         renderQuestionPage(current_page);
+        setActivePage(current_page)
     } 
 }
 
 const next = () =>{
     if(current_page < getNumPages()){
         current_page++;
-        renderQuestionPage(current_page);
+    } else {
+        current_page = 1;
     }
+    
+    renderQuestionPage(current_page);
+    setActivePage(current_page)
 }
 
 const renderQuestionPage = (page) => {
