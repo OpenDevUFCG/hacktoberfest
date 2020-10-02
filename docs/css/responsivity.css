@@ -90,6 +90,7 @@
     
     nav {
         width: 100%;
+        z-index: 2;
     }
     
     #nav-bar {
@@ -103,6 +104,7 @@
         align-items: center;
 
         font-size: 0.8rem;
+        background: #24224f;
     }   
     
     #more {
@@ -129,11 +131,11 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     #nav-bar.hidden-content {
         flex-direction: column;
         gap: 2.5rem;
-        font-size: 0.9rem;
+        font-size: 0.9rem;  
     }
 
     #header-logo {
@@ -142,5 +144,10 @@
 
     .section-title {
         font-size: 1.1em;
+    }
+
+    #previous-events .section-title {
+        font-size: 1.5em;
+        text-align: center;
     }
 }
