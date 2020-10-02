@@ -379,3 +379,7 @@ header {
   font-size: 1em;
   line-height: 1.5;
 }
+
+.info a {
+  text-decoration: underline;
+}
