@@ -7,8 +7,8 @@ const schedule = [
                 date: "Sábado (3) - 14h",
                 events: [
                     { 
-                        speaker: "Fanny Barbosa e Mariana Nascimento",
-                        topic: "Abertura + palestras de Git  e trilha open source",
+                        speaker: "Fanny Vieira e Mariana Nascimento",
+                        topic: "Abertura + palestras de Git e trilha open source",
                     }
                 ]
                 
@@ -24,7 +24,7 @@ const schedule = [
                 date: "Terça (6) - 19h30",
                 events: [
                     { 
-                        speaker: "Espíndula",
+                        speaker: "Pedro Espíndula",
                         topic: "Conceitos iniciais de programação",
                     }
                 ] 
@@ -33,7 +33,7 @@ const schedule = [
                 date: "Sábado (10) - 14h",
                 events: [
                     {
-                        speaker: "Héricles",
+                        speaker: "Héricles Emanuel",
                         topic: "OpenMined e contribuindo para organizações",
                     }
                 ]  
@@ -80,7 +80,7 @@ const schedule = [
                         topic: "Como estilizar uma página web",
                     },
                     {
-                        speaker: "Jessé",
+                        speaker: "Jessé Souza",
                         topic: "Introdução a Web",
                     }
                 ]  
@@ -102,7 +102,7 @@ const schedule = [
                 date: "Sábado (24) - 14h",
                 events: [
                     {
-                        speaker: "Thayanne",
+                        speaker: "Thayanne Sousa",
                         topic: "Como fazer um blog utilizando Gatsby",
                     },
                     {
