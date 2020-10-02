@@ -37,6 +37,7 @@ body {
     --light-blue: rgba(156,168,240,1);
     --header-font: #6C75A8;
     --header-font-hover: #E8EBFF;
+    --solid-light-blue: #9ca8f0;
     width: 100%;
     background: #24224f;
     font-family: 'retro-gaming';
@@ -110,6 +111,7 @@ header {
 
 #faq {
   color: #fff;
+  padding: 80px 0;
 }
 
 #faq h2 {
@@ -122,12 +124,13 @@ header {
   background: #121B51;
   display: flex;
   align-items: center;
+  padding: 20px 10px;
 }
 
 #faq-list {
   height: 400px;
-  padding: 30px;
-  width: 90%;
+  padding: 20px;
+  width: 100%;
 }
 
 .faq-item {
@@ -206,7 +209,7 @@ header {
 
   #faq-list {
     height: 400px;
-    padding: 10px;
+    padding: 0;
     text-align: center;
   }
   
@@ -216,7 +219,6 @@ header {
   }
 
   .faq-item .question {
-    margin-bottom: 5px;
     font-size:  0.8em;
   }
   
@@ -228,6 +230,21 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .faq-item .question {
+    margin-bottom: 5px;
+    font-size:  0.7em;
+  }
+  
+  .faq-item .answer {
+    font-size: 0.6em;
+  }
+
+  #faq-menu {
+    font-size: 0.7em;
   }
 }
 
@@ -288,7 +305,6 @@ header {
 /* Anouncement Section */
 
 #eventAnnouncment {
-  width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -297,7 +313,6 @@ header {
 .announcementMediaContainer {
   display: flex;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -305,12 +320,12 @@ header {
 }
 
 .box {
-  border: 1px solid #9ca8f0;
+  border: 1px solid var(--solid-light-blue);
   font-family: I_pixel_u;
-  color: #9ca8f0;
+  color: var(--solid-light-blue);
   text-align: center;
   padding: 10px;
-  margin: 1.5em;
+  margin: 1.5em 0;
   display: flex;
   justify-content:center;
   align-items:center;
@@ -338,6 +353,11 @@ header {
 
 .social-media-img {
   margin: 0.8em;
+  transition: 0.2s ease;
+}
+
+.social-media-img:hover{
+  transform: scale(1.2);    
 }
 
 @media (max-width: 800px) {
@@ -379,7 +399,7 @@ header {
 
 @media (max-width: 400px) {
   .box h1 {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 }
 
@@ -471,13 +491,13 @@ header {
 /* About Section */
 
 #about {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .info {
-  max-width: 1030px;
+  width: 80%;
 }
 
 .info + .info {
@@ -493,6 +513,16 @@ header {
 
 .info a {
   text-decoration: underline;
+}
+
+@media (max-width: 768px){
+  .info {
+    width: 100%;
+  }
+
+  .info p {
+    font-size: 0.8em;
+  }
 }
 
 /* Footer */

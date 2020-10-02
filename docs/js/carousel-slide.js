@@ -1,4 +1,4 @@
-const imgs = ["img1.png", "img2.png", "img3.png", "img4.png", "img5.png"];
+const imgs = ["img1.jpg", "img2.jpeg", "img3.jpg", "img4.jpg", "img5.jpg"];
 
 const carouselSlide = document.querySelector(".carousel-slide");
 
@@ -14,7 +14,6 @@ getImg = (path, idName) => {
   if(idName) img.setAttribute("id", idName);
   return img;
 }
-
 
 initImgs = () => {
   imgs.forEach( img => {
