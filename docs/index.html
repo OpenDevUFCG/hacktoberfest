@@ -10,6 +10,12 @@
     <title>Hacktoberfest 2020</title>
   </head>
   <body>
+    <!-- <div class="content">
+      <div class="glitch">
+           <div class="glitchit"></div>
+           <div class="glitchit"></div>
+      </div>
+    </div> -->
     <header>
         <div id="logo-container">
             <svg id="header-logo" width="200" height="37" viewBox="0 0 200 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,24 +37,21 @@
         </div>
         <nav>
             <ul id="nav-bar">
-                <li class='nav-links'><a href="#home">o evento</a></li>
+                <li class='nav-links'><a href="#home">Home</a></li>
                 <li class='nav-links'><a href="#about">como será?</a></li>
                 <li class='nav-links'><a href="#schedule">cronograma</a></li>
                 <div id="more-information">
                     <li class='nav-links' id='more'><a>mais</a></li>
                     <div class="hidden-content">
                         <li class='nav-links' ><a href="#faq">dúvidas</a></li>
-                        <li class='nav-links' ><a >loja</a></li>
+                        <li class='nav-links' ><a href="#previous-events">Eventos</a></li>
                     </div>
                 </div>
             </ul>
         </nav>
         <div id="countdown-timer-container">
             <div id="countdown-timer">
-                <p><span class="days"></span>d</p>
-                <p><span class="hours"></span>h</p>
-                <p><span class="minutes"></span>m</p>
-                <p><span class="seconds"></span>s</p>
+                <span>COMING SOON</span>
             </div>
           </div>
         </ul>
@@ -57,13 +60,7 @@
     <section class="crt" id="home">
       <h4 class="retro">OUTUBRO DE 2020</h4>
       <img id="logo" src="./assets/img/logo.svg" alt="Logo" />
-
-      <div class="content">
-          <div class="glitch">
-               <div class="glitchit"></div>
-               <div class="glitchit"></div>
-          </div>
-      </div> 
+ 
       <div id="timer-section">
           <div id="timer">
               <div class="days"></div> <span class="time-label">d</span> &nbsp
@@ -134,9 +131,32 @@
         </p>
       </div>
     </section>
-    <section id="schedule"></section>
+    <section id="schedule">
+      <h2 class="section-title">CRONOGRAMA</h2>
+      <div id="schedule-container">
+        <div id="schedule-list">
+          <div class="schedule-item schedule-template">
+            <div class="schedule-item-header"> 
+              <p class="schedule-item-title"></p>
+              <p class="schedule-item-topic"></p>
+            </div>
+            <div class="days-list">
+              <div class="day-item day-template">
+                <p class="day-item-date"></p>
+                <div class="day-item-events">
+                  <div class="day-item-event-template">
+                    <p class="day-item-topic"></p>
+                    <p class="day-item-speaker"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="faq">
-        <h2>DÚVIDAS SOBRE O EVENTO</h2>
+        <h2 class="section-title">DÚVIDAS SOBRE O EVENTO</h2>
         <div id="faq-container">
             <div id="faq-list">
                 <div class="faq-item faq-template">
@@ -168,12 +188,15 @@
       </div>
     </section>
     <footer>
+      <img src="./assets/img/logo-opendevufcg.svg" alt="">
       <p>© Opendev 2020 - Todos os direitos reservados.</p>
     </footer>
     <script src="./data/frequently_questions.js"></script>
+    <script src="./data/schedule.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/event_schedule.js"></script>
     <script src="./js/countdown_timer.js"></script>
     <script src="./js/burguer_menu.js"></script>
-    <script src="../docs/js/carousel-slide.js"></script>
+    <script src="./js/carousel-slide.js"></script>
 </body>
 </html>

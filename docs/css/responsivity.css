@@ -129,7 +129,7 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     #nav-bar.hidden-content {
         flex-direction: column;
         gap: 2.5rem;
@@ -142,5 +142,10 @@
 
     .section-title {
         font-size: 1.1em;
+    }
+
+    #previous-events .section-title {
+        font-size: 1.5em;
+        text-align: center;
     }
 }
