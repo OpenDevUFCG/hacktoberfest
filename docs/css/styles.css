@@ -133,17 +133,24 @@ header {
   width: 100%;
 }
 
+.line {
+  width: 40%;
+  border-bottom: 1px solid var(--solid-light-blue)
+}
+
 .faq-item {
+  padding: 10px 0;
   height: 50%;
 }
 
 .faq-item .question {
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .faq-item .answer {
   color: #A5A9BC;
-  font-size: 0.9em;
+  font-size: 0.85em;
   font-family: 'roboto-mono';
 }
 
@@ -230,6 +237,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .line {
+    display: none;
   }
 }
 

@@ -4,11 +4,11 @@ const itemTemplate = document.querySelector('.faq-template').cloneNode(true);
 
 window.addEventListener('load', () => {
     setListenerFunctions()
-    renderQuestionPage(current_page)
-    loadPagesList()
+    renderQuestionsPage(current_page)
+    loadPagesMenu()
 })
 
-const loadPagesList = () => {
+const loadPagesMenu = () => {
     const list = document.querySelector('#faq-menu ul');
     for(let i = 1; i <= getNumPages(); i++){
         const elm = document.createElement('li')
@@ -36,14 +36,13 @@ const setActivePage = (page) => {
     current_page = page
     clearActivePages()
     document.getElementById('page-'+page).classList.add('btn-active')
-    renderQuestionPage(page)
+    renderQuestionsPage(page)
 }
 
 const setListenerFunctions = () => {
     const prevBtn = document.querySelector('.prev')
     const nextBtn = document.querySelector('.next')
 
-    //prevBtn.addEventListener('click', prev)
     nextBtn.addEventListener('click', next)
 }
 
@@ -54,26 +53,24 @@ const getNumPages = () => {
 const prev = () => {
     if(current_page > 1){
         current_page--;
-        renderQuestionPage(current_page);
+        renderQuestionsPage(current_page);
         setActivePage(current_page)
     } 
 }
 
 const next = () =>{
-    if(current_page < getNumPages()){
-        current_page++;
-    } else {
-        current_page = 1;
-    }
+
+    current_page = current_page < getNumPages() ? current_page + 1 : 1
     
-    renderQuestionPage(current_page);
+    renderQuestionsPage(current_page);
     setActivePage(current_page)
 }
 
-const renderQuestionPage = (page) => {
+const renderQuestionsPage = (page) => {
     const questionContainer = document.getElementById('faq-list');
 
     questionContainer.innerHTML = "";
+
 
     for(let i = (page-1) * questions_per_page; i < (page * questions_per_page); i++){
         if(questions[i]){
@@ -86,6 +83,12 @@ const renderQuestionPage = (page) => {
             answer.innerHTML = questions[i].answer;
     
             questionContainer.appendChild(item);
+
+            if(questionContainer.childNodes.length == 1){
+                const line = document.createElement('hr')
+                line.classList.add('line')
+                questionContainer.appendChild(line)
+            }
         }
     }
 }
