@@ -16,7 +16,7 @@ const schedule = [
         ],
     },
     { 
-        title: "1° Semana <br>(dias 5 e 10)",
+        title: "1° Semana <br>(dias 6 e 10)",
         topic: "Trilha Iniciantes",
         days: [
             { 
@@ -30,7 +30,7 @@ const schedule = [
                 ] 
             },
             { 
-                date: "Sábado (3) - 14h",
+                date: "Sábado (10) - 14h",
                 events: [
                     {
                         speaker: "Héricles",
@@ -86,7 +86,7 @@ const schedule = [
                 ]  
             },
             { 
-                date: "Quinta (29) - 19h30",
+                date: "Quinta (22) - 19h30",
                 events: [
                     {
                         speaker: "Lucas de Medeiros",
@@ -99,7 +99,7 @@ const schedule = [
                 ]  
             },
             { 
-                date: "Sábado (31) - 14h",
+                date: "Sábado (24) - 14h",
                 events: [
                     {
                         speaker: "Thayanne",
