@@ -49,7 +49,7 @@ const schedule = [
                 events: [
                     {
                         speaker: "Matheus Gaudêncio",
-                        topic: "Arquitetura em camadas",
+                        topic: "Cache, Stateless, Sharding e Load Balancer - Estratégias de escalonamento para sistemas corporativos",
                     },
                     {
                         speaker: "Gabriel Tavares",
@@ -93,8 +93,8 @@ const schedule = [
                         topic: "Introdução a React",
                     },
                     {
-                        speaker: "Luciano",
-                        topic: "Como gerenciar estados eficientimente",
+                        speaker: "Luciano de Oliveira",
+                        topic: "Estado em React: os comos e os porquês",
                     }
                 ]  
             },
@@ -121,8 +121,8 @@ const schedule = [
                 date: "Terça (27) - 19h30",
                 events: [
                     {
-                        speaker: "Hadrizia",
-                        topic: "Como fazer análises exploratórias de dados em Python",
+                        speaker: "Hadrizia Santos",
+                        topic: "Introdução à Ciência de dados",
                     }
                 ]  
             },
@@ -140,11 +140,11 @@ const schedule = [
                 events: [
                     {
                         speaker: "Júlio Barreto",
-                        topic: "Introdução a NLP",
+                        topic: "Textões e dados: o que é PLN e em que podemos utilizar",
                     },
                     {
-                        speaker: "Elloá",
-                        topic: "Palestra sobre ...",
+                        speaker: "Elloá B. Guedes",
+                        topic: "Machine Learning: Os Próximos Desafios",
                     }
                 ]  
             }
