@@ -1,9 +1,10 @@
-import { SectionTitle, Wrapper } from "./util/generalStyles";
+import { AboutSection } from "./components/AboutSection";
+import { Wrapper } from "./util/generalStyles";
 
 function App() {
   return (
     <Wrapper>
-      <SectionTitle>Sobre o nosso evento</SectionTitle>
+      <AboutSection />
     </Wrapper>
   );
 }
