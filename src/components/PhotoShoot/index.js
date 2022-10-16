@@ -23,7 +23,7 @@ export const PhotoShoot = ({ photosIds }) => {
   return (
     <>
       <TitleSection>
-        <Title>Outras edições</Title>
+        <Title id="outras-edicoes">Outras edições</Title>
         <Cat src={cat} />
       </TitleSection>
       <Wrapper>
