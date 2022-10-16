@@ -12,7 +12,7 @@ export const SectionTitle = styled.h2`
   letter-spacing: 0.145rem;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #f8a362;
+  color: var(--orange);
   text-align: center;
   line-height: 1.25;
 `;

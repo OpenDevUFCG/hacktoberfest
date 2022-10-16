@@ -3,6 +3,12 @@
    License: none (public domain)
 */
 
+:root {
+  --orange: #f8a362;
+  --orange-dark: #f08635;
+  --orange-darkest: rgba(240, 134, 53, 0.3);
+}
+
 html {
   min-height: 100vh;
   background-image: url("./assets/background.jpg");

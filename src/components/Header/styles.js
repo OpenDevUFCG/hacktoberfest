@@ -24,12 +24,11 @@ export const Links = styled.ul`
 
 export const ItemLink = styled.li`
   display: flex;
-  align-items: center;
   font-weight: bold;
   gap: 2.5rem;
 
   @media screen and (min-width: 1024px) {
-    gap: 5rem;
+    gap: 3rem;
   }
 
   @media screen and (max-width: 600px) {
@@ -41,8 +40,8 @@ export const Link = styled.a`
   font-family: "Eater", cursive;
   letter-spacing: 0.145rem;
   text-decoration: none;
-  font-size: 1.125rem;
   color: #d9d9d9;
+  transition: 0.3s;
 
   @media screen and (max-width: 600px) {
     font-size: 11px;
@@ -65,11 +64,8 @@ export const Link = styled.a`
 export const SocialLinks = styled.div`
   display: flex;
   gap: 1.5rem;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.15s ease-in-out;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1030px) {
     display: none;
   }
 `;
