@@ -3,7 +3,7 @@ import { SocialIcon } from "./styles";
 
 export const Discord = ({url}) => {
   return (
-    <a href={url} target="_blank">
+    <a href={url} target="_blank" rel="noreferrer">
     <SocialIcon
       target="_blank"
       width="36"

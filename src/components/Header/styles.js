@@ -56,7 +56,7 @@ export const Link = styled.a`
   }
 
   &:hover {
-    color: #f8a362;
+    color: var(--orange);
     text-decoration: underline;
   }
 `;
@@ -69,3 +69,4 @@ export const SocialLinks = styled.div`
     display: none;
   }
 `;
+

@@ -3,7 +3,7 @@ import { SocialIcon } from "./styles";
 
 export const Twitter = ({url}) => {
   return (
-    <a href={url} target="_blank">
+    <a href={url} target="_blank" rel="noreferrer">
     <SocialIcon
       width="36"
       height="36"
