@@ -5,7 +5,7 @@ import alien from "../../assets/alien.png";
 export const AboutSection = () => {
   return (
     <Wrapper>
-      <SectionTitle>Sobre o nosso evento</SectionTitle>
+      <SectionTitle id="sobre-o-nosso-evento">Sobre o nosso evento</SectionTitle>
       <AboutSectionContent>
         <Alien
           src={alien}
