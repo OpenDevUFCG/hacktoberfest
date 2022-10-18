@@ -7,8 +7,8 @@
   --orange: #f8a362;
   --orange-dark: #f08635;
   --orange-darkest: rgba(240, 134, 53, 0.3);
-  --medium-dark-blue: #27326A;
-  --white: #FFFFFF;
+  --medium-dark-blue: #27326a;
+  --white: #ffffff;
   --dark-blue: #071456;
 }
 
@@ -29,7 +29,7 @@ html {
   display: flex;
   flex-flow: column;
   align-items: center;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif !important;
 }
 
 html,
@@ -119,7 +119,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: "Roboto";
+  font-family: "Roboto" !important;
 }
 /* HTML5 display-role reset for older browsers */
 article,
