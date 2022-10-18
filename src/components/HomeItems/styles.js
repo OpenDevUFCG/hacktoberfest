@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   gap: 3rem;
 `;
 
-export const Items = styled.div`
+export const ContainerItems = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3rem;

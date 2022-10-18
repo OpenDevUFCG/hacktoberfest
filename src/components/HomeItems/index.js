@@ -9,14 +9,14 @@ import {
   Hacktoberfest,
   LogoOpenDev,
   Wrapper,
-  Items,
+  ContainerItems,
 } from "./styles";
 import { Buttons } from "../Button";
 import { Countdown } from "../Countdown";
 
 export const HomeItems = () => {
   return (
-    <Items>
+    <ContainerItems>
       <Wrapper>
         <LogoOpenDev
           src={logoOpenDev}
@@ -44,6 +44,6 @@ export const HomeItems = () => {
         <Buttons color="#F1EBD8" text="Inscreva-se" link="" />
       </ButtonsArea>
       <Countdown />
-    </Items>
+    </ContainerItems>
   );
 };
