@@ -15,7 +15,7 @@ export const Button = styled.button`
 
   &:hover {
     transform: scale(1.05);
-    transition: 0.2s ease;
+    transition: all 0.20s ease-in-out;
   }
 
   @media screen and (max-width: 600px) {
