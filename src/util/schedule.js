@@ -1,7 +1,7 @@
 export const schedule = [
   {
     init: "08:00",
-    end: "08:00",
+    end: "09:00",
     activities: [[{ title: "Credenciamento dos participantes" }]],
   },
   {
