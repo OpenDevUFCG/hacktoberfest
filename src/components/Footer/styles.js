@@ -7,9 +7,8 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 18rem;
+  height: 16rem;
   background-image: url(${lua});
-  background-repeat: no-repeat;
   background-position: center;
   background-position: top;
 `;
