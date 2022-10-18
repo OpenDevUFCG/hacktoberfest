@@ -41,7 +41,7 @@ export const HomeItems = () => {
           text="Contribua"
           link="https://opencollective.com/opendevufcg/projects/hacktoberfest2022"
         />
-        <Buttons color="#F1EBD8" text="Inscreva-se" link="" />
+        <Buttons color="#F1EBD8" text="Inscreva-se" link="" disabled />
       </ButtonsArea>
       <Countdown />
     </ContainerItems>

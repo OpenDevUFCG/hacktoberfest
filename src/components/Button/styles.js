@@ -12,11 +12,16 @@ export const Button = styled.button`
   cursor: pointer;
   outline: none;
   border: none;
-  transition: all 0.20s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
-  &:hover {
+  &:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
     transform: scale(1.05);
-    transition: all 0.20s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   @media screen and (max-width: 820px) {
