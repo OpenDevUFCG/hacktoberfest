@@ -120,6 +120,18 @@ export const schedule = [
   },
   {
     init: "16:00",
+    end: "16:30",
+    activities: [
+      [
+        {
+          title: "Coffee break",
+          info: "Patrocinado pelo evento",
+        },
+      ],
+    ],
+  },
+  {
+    init: "16:30",
     end: "17:30",
     activities: [
       [
