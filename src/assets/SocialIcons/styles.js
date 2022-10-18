@@ -1,9 +1,9 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const SocialIcon = styled.svg`
-    cursor: pointer;
-    &:hover {
-        transform: scale(1.1);
-        transition: all 0.20s ease-in-out;
-    }
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+  }
 `;
