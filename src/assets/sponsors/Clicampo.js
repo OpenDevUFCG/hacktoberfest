@@ -39,8 +39,8 @@ export const Clicampo = () => {
           fill="#FE4C4C"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M83.8178 76.5499C83.8737 75.8902 82.9136 75.7545 82.687 76.3763C81.1566 80.5651 78.789 84.3983 75.7286 87.6421C72.6683 90.886 68.9793 93.4725 64.8866 95.2439C60.7939 97.0153 56.3832 97.9346 51.9236 97.9456C47.464 97.9565 43.0489 97.0591 38.9475 95.3078C34.8461 93.5566 31.1443 90.9883 28.068 87.7596C24.9917 84.5309 22.6053 80.7094 21.0543 76.5282C19.5033 72.347 18.8201 67.8936 19.0466 63.4398C19.273 58.9859 20.4043 54.6248 22.3714 50.6225C22.6755 50.0059 21.8859 49.3803 21.4302 49.895C17.6938 54.134 15.0164 59.199 13.6179 64.6739C12.2194 70.1488 12.1398 75.8774 13.3855 81.389C14.6312 86.9007 17.1668 92.0382 20.7839 96.3794C24.401 100.721 28.9965 104.142 34.1927 106.362C39.389 108.582 45.0379 109.538 50.6753 109.15C56.3126 108.763 61.7777 107.044 66.6215 104.134C71.4654 101.224 75.5497 97.2065 78.5391 92.4113C81.5285 87.6161 83.3376 82.1802 83.8178 76.5499L83.8178 76.5499Z"
           fill="url(#paint0_linear_1364_727)"
         />
@@ -53,10 +53,10 @@ export const Clicampo = () => {
             y2="66.1366"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.54719" stop-color="white" />
-            <stop offset="0.77911" stop-color="white" stop-opacity="0.68964" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.54719" stopColor="white" />
+            <stop offset="0.77911" stopColor="white" stopOpacity="0.68964" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
         </defs>
       </SponsorsIcon>

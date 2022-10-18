@@ -11,7 +11,7 @@ export const SponsorsSection = () => {
       <SectionTitle>Patrocinadores</SectionTitle>
       <Container>
         {patrocinadores.map(({ nome, logo }) => (
-          <Sponsor nome={nome} logo={logo} />
+          <Sponsor nome={nome} logo={logo} key={nome} />
         ))}
       </Container>
     </Wrapper>

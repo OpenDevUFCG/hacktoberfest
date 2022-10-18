@@ -24,9 +24,14 @@ export const Schedule = ({ schedule }) => {
                 <Activities>
                   {current.activities.map((activityList, i) => {
                     return (
-                      <ActivitiesContainer>
+                      <ActivitiesContainer key={i}>
                         {activityList.map((activity) => {
-                          return <Activity {...activity} key={i} />;
+                          return (
+                            <Activity
+                              {...activity}
+                              key={`${i}-${activity.title}`}
+                            />
+                          );
                         })}
                       </ActivitiesContainer>
                     );
