@@ -5,6 +5,7 @@ export const HeaderContainer = styled.nav`
   align-items: center;
   height: 8rem;
   justify-content: space-between;
+  width: 100%;
 
   @media screen and (max-width: 1024px) {
     justify-content: center;
