@@ -1,5 +1,4 @@
 import { AboutSection } from "./components/AboutSection";
-import Activity from "./components/Activity";
 import { Header } from "./components/Header";
 import { PhotoShoot } from "./components/PhotoShoot";
 import { SponsorsSection } from "./components/SponsorsSection";
