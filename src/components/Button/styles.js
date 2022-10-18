@@ -6,7 +6,7 @@ export const Button = styled.button`
   height: 3.5rem;
   font-family: "Eater", cursive;
   font-size: 1.5rem;
-  color: var(--blue);
+  color: var(--dark-blue);
   border-radius: 16px;
   background-color: ${(props) => props.color};
   margin-bottom: 2.5rem;
