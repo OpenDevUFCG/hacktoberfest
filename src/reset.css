@@ -9,6 +9,15 @@
   --orange-darkest: rgba(240, 134, 53, 0.3);
   --medium-dark-blue: #27326A;
   --white: #FFFFFF;
+  --dark-blue: #071456;
+}
+
+body,
+#root {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 html {
