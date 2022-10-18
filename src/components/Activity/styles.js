@@ -13,6 +13,11 @@ export const Card = styled.article`
   gap: 1.25rem;
   background-color: var(--medium-dark-blue);
   border-radius: 0.75rem;
+
+  @media screen and (max-width: 525px) {
+    width: 15rem;
+    gap: 0.75rem;
+  }
 `;
 
 export const Title = styled.h5`
@@ -22,6 +27,10 @@ export const Title = styled.h5`
   text-align: center;
   color: var(--white);
   text-shadow: 0px 0px 42px rgba(255, 255, 255, 0.25);
+
+  @media screen and (max-width: 525px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Info = styled.p`
@@ -30,8 +39,13 @@ export const Info = styled.p`
   font-size: 1rem;
   text-align: center;
   color: var(--white);
+
+  @media screen and (max-width: 525px) {
+    font-size: 0.75rem;
+  }
 `;
 
 export const Divider = styled.hr`
   width: 2.5rem;
+  color: var(--white);
 `;

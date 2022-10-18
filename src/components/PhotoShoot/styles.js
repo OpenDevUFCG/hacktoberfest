@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   width: 100%;
   box-sizing: border-box;
   justify-content: center;
+  height: fit-content;
 
   @media screen and (max-width: 1090px) {
     flex-flow: column;
@@ -15,14 +16,12 @@ export const Wrapper = styled.div`
 
 export const TitleSection = styled.div`
   display: flex;
-  position: relative;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
-  transform: translateY(4rem);
+  height: 2rem;
+  align-items: end;
 
   @media screen and (max-width: 1090px) {
-    transform: translateY(2rem);
   }
 `;
 
@@ -32,6 +31,8 @@ export const Title = styled(SectionTitle)`
 
 export const Cat = styled.img`
   max-width: 10rem;
+  position: relative;
+  transform: translateY(3rem);
   @media screen and (max-width: 1090px) {
     width: 7rem;
   }

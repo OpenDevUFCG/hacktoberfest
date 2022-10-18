@@ -5,13 +5,17 @@ export const Wrapper = styled.section`
   display: flex;
   flex-flow: column;
   gap: 1rem;
-  width: 95vw;
+  width: 90vw;
   max-width: 100%;
   margin: 0 auto;
 `;
 
 export const Title = styled(SectionTitle)`
   text-align: start;
+
+  @media screen and (max-width: 750px) {
+    text-align: center;
+  }
 `;
 
 export const Row = styled.div`
@@ -24,6 +28,12 @@ export const Row = styled.div`
   border-radius: 1.5rem;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 0rem 1rem;
+
+  @media screen and (max-width: 750px) {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 `;
 
 export const Time = styled.p`
@@ -62,4 +72,9 @@ export const ActivitiesContainer = styled.div`
   flex-flow: column;
   gap: 1rem;
   padding: 2rem 0;
+
+  @media screen and (max-width: 750px) {
+    margin: 0 auto;
+    padding: 0;
+  }
 `;
