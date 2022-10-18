@@ -16,3 +16,12 @@ export const SectionTitle = styled.h2`
   text-align: center;
   line-height: 1.25;
 `;
+
+export const ContainerHome = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+`

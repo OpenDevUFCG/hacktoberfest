@@ -8,8 +8,17 @@ export const Wrapper = styled.div`
   gap: 3rem;
 `;
 
+export const Items = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+`
+
 export const LogoOpenDev = styled.img`
-  margin-top: 6rem;
 
   @media screen and (max-width: 600px) {
     width: 40%;
@@ -17,7 +26,6 @@ export const LogoOpenDev = styled.img`
 `;
 
 export const Hacktoberfest = styled.img`
-  margin-bottom: 3rem;
 
   @media screen and (max-width: 600px) {
     width: 80%;
@@ -28,9 +36,41 @@ export const CatAlienLittle = styled.img`
   position: absolute;
   width: 8rem;
   transform: rotate(-45deg);
+  bottom: 10rem;
+  left: 16rem;
+  z-index: 2;
+
+  @media screen and (max-width: 1200px) {
+    bottom: 8rem;
+    left: 10rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    top: 30rem;
+    left: -2.5rem;
+  }
+
+  @media screen and (max-width: 820px) {
+    bottom: 20rem;
+    left: 2rem;
+  }
 
   @media screen and (max-width: 600px) {
-    display: none;
+    bottom: 16rem;
+    width: 6rem;
+    left: -2rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    bottom: 10rem;
+    width: 6rem;
+    left: -3rem;
+  }
+
+  @media screen and (max-width: 360px) {
+    bottom: 14rem;
+    width: 6rem;
+    left: -3rem;
   }
 `;
 export const CatAlienBig = styled.img`
@@ -53,7 +93,8 @@ export const CatAlienBig = styled.img`
 
 export const ButtonsArea = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
+  justify-content: space-between;
+
 `;

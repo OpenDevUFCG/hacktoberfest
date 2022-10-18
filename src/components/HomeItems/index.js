@@ -1,7 +1,7 @@
 import React from "react";
 import hacktoberfest from "../../assets/hacktoberfest.svg";
 import catAlien from "../../assets/catAlien.svg";
-import logoOpenDev from "../../assets/logoOpenDev.png";
+import logoOpenDev from "../../assets/logoOpenDev.svg";
 import {
   ButtonsArea,
   CatAlienLittle,
@@ -9,12 +9,14 @@ import {
   Hacktoberfest,
   LogoOpenDev,
   Wrapper,
+  Items,
 } from "./styles";
 import { Buttons } from "../Button";
+import { Countdown } from "../Countdown";
 
 export const HomeItems = () => {
   return (
-    <>
+    <Items>
       <Wrapper>
         <LogoOpenDev
           src={logoOpenDev}
@@ -41,6 +43,7 @@ export const HomeItems = () => {
         />
         <Buttons color="#F1EBD8" text="Inscreva-se" link="" />
       </ButtonsArea>
-    </>
+      <Countdown />
+    </Items>
   );
 };
