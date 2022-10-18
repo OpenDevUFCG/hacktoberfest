@@ -6,19 +6,19 @@ export const Card = styled.article`
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-    width: 22.5em;
+    width: 22.5rem;
     min-height: fit-content;
     height: 100%;
-    padding: 1.25em 1.25em;
-    gap: 1.25em;
+    padding: 2rem 1.25rem;
+    gap: 1.25rem;
     background-color: var(--medium-dark-blue);
     box-shadow: 0px 4px 35px rgba(255, 255, 255, 0.25);
-    border-radius: 0.75em;
+    border-radius: 0.75rem;
 `
 
-export const Titulo = styled.h5`
+export const Title = styled.h5`
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     text-align: center;
     color: var(--white);
     text-shadow: 0px 0px 42px rgba(255, 255, 255, 0.25);
@@ -27,11 +27,11 @@ export const Titulo = styled.h5`
 export const Info = styled.p`
     font-style: italic;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
     color: var(--white);
 `
 
-export const Divisor = styled.hr`
-    width: 2.5em;
+export const Divider = styled.hr`
+    width: 2.5rem;
 `
