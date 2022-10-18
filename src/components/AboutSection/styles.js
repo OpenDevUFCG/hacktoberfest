@@ -35,5 +35,6 @@ export const Text = styled.p`
 
   @media screen and (max-width: 858px) {
     text-align: center;
+    font-size: 14px;
   }
 `;
