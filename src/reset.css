@@ -10,6 +10,14 @@
   --dark-blue: #071456;
 }
 
+body,
+#root {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 html {
   min-height: 100vh;
   background-image: url("./assets/background.jpg");
