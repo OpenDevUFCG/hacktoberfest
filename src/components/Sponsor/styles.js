@@ -23,7 +23,7 @@ export const Circle = styled.div`
 `;
 
 export const Text = styled.h3`
-  font-family: "Eater", cursive;
+  font-family: "Eater", cursive !important;
   margin-top: 1rem;
   font-size: 1.5rem;
   color: white;

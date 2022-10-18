@@ -11,6 +11,7 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled(SectionTitle)`
+  font-family: "Eater", cursive !important;
   text-align: start;
 
   @media screen and (max-width: 750px) {

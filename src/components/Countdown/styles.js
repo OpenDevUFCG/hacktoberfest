@@ -17,7 +17,7 @@ export const Text = styled.p`
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
-  font-family: "Eater", cursive;
+  font-family: "Eater", cursive !important;
   letter-spacing: 0.145rem;
 
   @media screen and (max-width: 858px) {

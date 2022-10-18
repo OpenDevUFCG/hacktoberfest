@@ -38,7 +38,7 @@ export const ItemLink = styled.li`
 `;
 
 export const Link = styled.a`
-  font-family: "Eater", cursive;
+  font-family: "Eater", cursive !important;
   letter-spacing: 0.145rem;
   text-decoration: none;
   color: #d9d9d9;
@@ -70,4 +70,3 @@ export const SocialLinks = styled.div`
     display: none;
   }
 `;
-

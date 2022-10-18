@@ -20,6 +20,7 @@ export const TitleSection = styled.div`
   justify-content: space-between;
   height: 2rem;
   align-items: end;
+  font-family: "Eater", cursive !important;
 
   @media screen and (max-width: 1090px) {
   }

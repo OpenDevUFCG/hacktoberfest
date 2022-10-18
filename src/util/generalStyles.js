@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 `;
 
 export const SectionTitle = styled.h2`
-  font-family: "Eater", cursive;
+  font-family: "Eater", cursive !important;
   letter-spacing: 0.145rem;
   font-size: 1.5rem;
   margin-bottom: 1rem;
