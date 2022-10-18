@@ -12,6 +12,11 @@ export const Wrapper = styled.div`
   background-position: center;
   background-position: top;
   margin-top: 8rem;
+
+  @media screen and (max-width: 750px) {
+    padding: 2rem 0;
+    height: 24rem;
+  }
 `;
 
 export const InnerWrapper = styled.div`
@@ -23,6 +28,11 @@ export const InnerWrapper = styled.div`
   justify-content: space-between;
   padding: 0 1rem;
   box-sizing: border-box;
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column-reverse;
+    gap: 6rem;
+  }
 `;
 
 export const SocialLinks = styled.div`
@@ -35,6 +45,10 @@ export const InfoContainer = styled.div`
   flex-flow: column;
   align-items: flex-end;
   gap: 1rem;
+
+  @media screen and (max-width: 750px) {
+    align-items: center;
+  }
 `;
 
 export const Info = styled.p`
