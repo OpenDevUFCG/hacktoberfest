@@ -10,6 +10,7 @@ import {
   Wrapper,
   InfoContainer,
   Info,
+  Logo,
 } from "./styles";
 
 export const Footer = () => {
@@ -18,7 +19,7 @@ export const Footer = () => {
   return (
     <Wrapper>
       <InnerWrapper>
-        <img
+        <Logo
           src={opendev}
           alt="Logo da opendev (dois simbolos maior que e menor que) azul"
         />

@@ -19,6 +19,12 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const Logo = styled.img`
+  @media screen and (max-width: 750px) {
+    width: 12rem;
+  }
+`;
+
 export const InnerWrapper = styled.div`
   margin-top: 2rem;
   max-width: 1280px;
@@ -31,7 +37,7 @@ export const InnerWrapper = styled.div`
 
   @media screen and (max-width: 750px) {
     flex-direction: column-reverse;
-    gap: 6rem;
+    gap: 4rem;
   }
 `;
 
