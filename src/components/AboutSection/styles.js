@@ -31,8 +31,10 @@ export const Text = styled.p`
   line-height: 30.49px;
   color: white;
   margin-bottom: 0.5rem;
+  font-size: 18px;
 
   @media screen and (max-width: 858px) {
     text-align: center;
+    font-size: 14px;
   }
 `;
