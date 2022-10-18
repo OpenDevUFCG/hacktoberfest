@@ -4,7 +4,6 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem 0;
   gap: 2rem;
 
   @media screen and (max-width: 858px) {

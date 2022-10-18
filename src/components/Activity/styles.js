@@ -18,6 +18,7 @@ export const Card = styled.article`
 export const Title = styled.h5`
   font-weight: 700;
   font-size: 1.25rem;
+  line-height: 1.25;
   text-align: center;
   color: var(--white);
   text-shadow: 0px 0px 42px rgba(255, 255, 255, 0.25);

@@ -1,12 +1,17 @@
 import styled from "styled-components";
+import { SectionTitle } from "../../util/generalStyles";
 
 export const Wrapper = styled.section`
   display: flex;
   flex-flow: column;
   gap: 1rem;
   width: 95vw;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+`;
+
+export const Title = styled(SectionTitle)`
+  text-align: start;
 `;
 
 export const Row = styled.div`

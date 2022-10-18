@@ -21,7 +21,7 @@ export const PhotoShoot = ({ photosIds }) => {
   useInterval(changePhotos, 10000);
 
   return (
-    <>
+    <section>
       <TitleSection>
         <Title id="outras-edicoes">Outras edições</Title>
         <Cat src={cat} />
@@ -42,7 +42,7 @@ export const PhotoShoot = ({ photosIds }) => {
           />
         </SmallerContainer>
       </Wrapper>
-    </>
+    </section>
   );
 };
 

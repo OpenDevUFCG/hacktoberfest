@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
   min-height: 100vh;
   box-sizing: border-box;
   max-width: 1280px;
@@ -24,4 +27,4 @@ export const ContainerHome = styled.section`
   width: 100%;
   height: 100vh;
   justify-content: center;
-`
+`;

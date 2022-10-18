@@ -1,12 +1,18 @@
-import { SectionTitle } from "../../util/generalStyles";
 import { schedule } from "../../util/schedule";
 import Activity from "../Activity";
-import { Wrapper, Row, ActivitiesContainer, Activities, Time } from "./styles";
+import {
+  Wrapper,
+  Row,
+  ActivitiesContainer,
+  Activities,
+  Time,
+  Title,
+} from "./styles";
 
 export const Schedule = ({ schedule }) => {
   return (
-    <>
-      <SectionTitle id="cronograma">Cronograma do evento</SectionTitle>
+    <section>
+      <Title id="cronograma">Cronograma do evento</Title>
       <Wrapper>
         {schedule &&
           schedule.map((current, i) => {
@@ -30,7 +36,7 @@ export const Schedule = ({ schedule }) => {
             );
           })}
       </Wrapper>
-    </>
+    </section>
   );
 };
 

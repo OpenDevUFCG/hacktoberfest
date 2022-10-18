@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
 
 export const TitleSection = styled.div`
   display: flex;
+  position: relative;
   width: 100%;
   justify-content: space-between;
   align-items: center;
