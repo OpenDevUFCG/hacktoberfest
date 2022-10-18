@@ -15,7 +15,7 @@ export const schedule = [
     activities: [
       [
         {
-          title: "Investigando o VSCode: Discas e Personalizações",
+          title: "Investigando o VSCode: Dicas e Personalizações",
           info: "Túlio Araújo Cunha",
         },
         {
