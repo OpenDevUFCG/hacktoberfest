@@ -19,6 +19,10 @@ export const Circle = styled.div`
   @media screen and (max-width: 858px) {
     width: 5rem;
     height: 5rem;
+
+    img {
+      width: 50px;
+    }
   }
 `;
 
@@ -26,6 +30,9 @@ export const Text = styled.h3`
   font-family: "Eater", cursive !important;
   margin-top: 1rem;
   font-size: 1.5rem;
+  max-width: 10rem;
+  text-align: center;
+  line-height: 1.5;
   color: white;
 
   @media screen and (max-width: 858px) {
