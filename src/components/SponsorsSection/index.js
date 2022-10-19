@@ -11,7 +11,7 @@ export const SponsorsSection = () => {
     { logo: <LSD />, nome: "Lab. de Sistemas distribuídos" },
     {
       logo: <img src={codex} alt="X colorido com fundo preto" />,
-      nome: "Code Jr.",
+      nome: "Codex Jr.",
     },
   ];
 
