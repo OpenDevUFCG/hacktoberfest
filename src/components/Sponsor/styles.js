@@ -16,6 +16,10 @@ export const Circle = styled.div`
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
 
+  img {
+    max-width: 150px;
+  }
+
   @media screen and (max-width: 858px) {
     width: 5rem;
     height: 5rem;
